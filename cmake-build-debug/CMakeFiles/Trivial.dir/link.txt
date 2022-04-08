@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Trivial.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\Trivial.dir/objects.a @CMakeFiles\Trivial.dir\objects1.rsp
+C:\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Trivial.dir/objects.a -Wl,--no-whole-archive -o Trivial.exe -Wl,--out-implib,libTrivial.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Trivial.dir\linklibs.rsp
