@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/listaPreguntas.c">
+			<Option target="Trivial"/>
+		</Unit>
+		<Unit filename="C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/listaPreguntas.h">
+			<Option target="Trivial"/>
+		</Unit>
 		<Unit filename="C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/main.c">
 			<Option target="Trivial"/>
 		</Unit>

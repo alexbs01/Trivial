@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/listaPreguntas.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+string.h
+-
+
 C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/main.c
 stdio.h
 -
 string.h
 -
-windows.h
--
+listaPreguntas.h
+C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/listaPreguntas.h
 

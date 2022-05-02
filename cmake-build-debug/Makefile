@@ -128,6 +128,30 @@ Trivial/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trivial.dir\build.make CMakeFiles/Trivial.dir/build
 .PHONY : Trivial/fast
 
+listaPreguntas.obj: listaPreguntas.c.obj
+.PHONY : listaPreguntas.obj
+
+# target to build an object file
+listaPreguntas.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trivial.dir\build.make CMakeFiles/Trivial.dir/listaPreguntas.c.obj
+.PHONY : listaPreguntas.c.obj
+
+listaPreguntas.i: listaPreguntas.c.i
+.PHONY : listaPreguntas.i
+
+# target to preprocess a source file
+listaPreguntas.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trivial.dir\build.make CMakeFiles/Trivial.dir/listaPreguntas.c.i
+.PHONY : listaPreguntas.c.i
+
+listaPreguntas.s: listaPreguntas.c.s
+.PHONY : listaPreguntas.s
+
+# target to generate assembly for a file
+listaPreguntas.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trivial.dir\build.make CMakeFiles/Trivial.dir/listaPreguntas.c.s
+.PHONY : listaPreguntas.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Trivial
+	@echo ... listaPreguntas.obj
+	@echo ... listaPreguntas.i
+	@echo ... listaPreguntas.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/listaPreguntas.c" "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/cmake-build-debug/CMakeFiles/Trivial.dir/listaPreguntas.c.obj"
   "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/main.c" "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/cmake-build-debug/CMakeFiles/Trivial.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
