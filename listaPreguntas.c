@@ -32,13 +32,14 @@ tItemL parametrosAtItemL(const char *id, const char *categ, const char *preg, co
         case 'o': objetoLista.categoria = ocio; break;
         default: break;
     }
+
+    // Como son strings, copia el valor de cada parametro en su posicion del struct correspondiente
     strcpy(objetoLista.pregunta, preg);
     strcpy(objetoLista.opcionA, op1);
     strcpy(objetoLista.opcionB, op2);
     strcpy(objetoLista.opcionC, op3);
     strcpy(objetoLista.opcionD, op4);
     strcpy(objetoLista.opcionCorrecta, opCorrecta);
-
 
     return objetoLista;
 }
@@ -70,7 +71,7 @@ bool insertItem(tItemL d, tList *L) {
 
             q->next = *L;
             *L = q;
-        } else { //Find right position
+        } else { // Inserta en la posicion correcta si esta no es la primera
             p = findPosition(*L, d);
             q->next = p->next;
             p->next = q;

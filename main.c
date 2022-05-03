@@ -25,6 +25,7 @@ int main() {
     const char delimitador[] = ";";
     while(fgets(buffer, BUFFER_SIZE, ficheroPreguntas)) {
 
+        // Utilizamos strtok para separar los elementos de cada linea, utilizando el delimitador ';'
         id = strtok(buffer, delimitador);
         categ = strtok(NULL, delimitador);
         preg = strtok(NULL, delimitador);
