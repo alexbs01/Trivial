@@ -19,16 +19,18 @@ bool createNode(tPosL *p) {
 
 tItemL parametrosAtItemL(const char *id, const char *categ, const char *preg, const char *op1, const char *op2, const char *op3, const char *op4, const char *opCorrecta) {
     tItemL objetoLista;
-    enum categorias categoriaPregunta;
+    char *ptr;
 
-    objetoLista.identificador = (int) *id;
-    switch(*categ) {
-        case 'c': objetoLista.categoria = 'c'; break;
-        case 'a': objetoLista.categoria = 'a'; break;
-        case 'g': objetoLista.categoria = 'g'; break;
-        case 'h': objetoLista.categoria = 'h'; break;
-        case 'd': objetoLista.categoria = 'd'; break;
-        case 'o': objetoLista.categoria = 'o'; break;
+
+    objetoLista.identificador = (int) strtol(id, &ptr, 10); // Para pasar de un id char a un id de tipo int
+    switch(*categ) { // Selecciona la categoria correspondiente para cada pregunta
+        case 'c': objetoLista.categoria = ciencia; break;
+        case 'a': objetoLista.categoria = arte; break;
+        case 'g': objetoLista.categoria = geografia; break;
+        case 'h': objetoLista.categoria = historia; break;
+        case 'd': objetoLista.categoria = deporte; break;
+        case 'o': objetoLista.categoria = ocio; break;
+        default: break;
     }
     strcpy(objetoLista.pregunta, preg);
     strcpy(objetoLista.opcionA, op1);
@@ -43,12 +45,10 @@ tItemL parametrosAtItemL(const char *id, const char *categ, const char *preg, co
 
 
 tPosL findPosition(tList L, tItemL d) {
-
     tPosL p;
 
     p = L;
-    while ((p->next != LNULL) &&
-           (p->next->data.identificador < d.identificador)) { //Continue while data is ordered
+    while ((p->next != LNULL) && (p->next->data.identificador < d.identificador)) { //Continue while data is ordered
         p = p->next;
     }
     return p;
@@ -66,7 +66,7 @@ bool insertItem(tItemL d, tList *L) {
         if (isEmptyList(*L)) {
             *L = q;
 
-        } else if (d.identificador < (*L)->data.identificador) { // insert at the top of the list (first element)
+        } else if (d.identificador < (*L)->data.identificador) { // Inserta como primer elemento
 
             q->next = *L;
             *L = q;
@@ -77,4 +77,27 @@ bool insertItem(tItemL d, tList *L) {
         }
         return true;
     }
+}
+
+void imprimirLista(tList L) {
+    tPosL posicion;
+
+    if(isEmptyList(L)) {
+        printf("Esta lista está vacia\n");
+    } else {
+        for (posicion = L; posicion != LNULL; posicion = posicion->next) {
+            printf("\nid: %d"
+                   "\ncateg: %c"
+                   "\nPregunta: %s"
+                   "\nopcion1: %s"
+                   "\nopcion2: %s"
+                   "\nopcion3: %s"
+                   "\nopcion4: %s"
+                   "\nopcionCorrec: %s\n", posicion->data.identificador,
+                   posicion->data.categoria, posicion->data.pregunta,
+                   posicion->data.opcionA, posicion->data.opcionB, posicion->data.opcionC,
+                   posicion->data.opcionD, posicion->data.opcionCorrecta);
+        }
+    }
+
 }

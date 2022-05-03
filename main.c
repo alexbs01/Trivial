@@ -13,6 +13,8 @@ int main() {
     tList listaPreguntas;
     tItemL lineaDePregunta;
 
+    createEmptyList(&listaPreguntas); // Se crea una lista vacia para las preguntas
+
     ficheroPreguntas = fopen(nombreFicheroPreguntas, "r"); // Abre el fichero en modo lectura
 
     if(ficheroPreguntas == NULL) { // Si no lo puede abrir muestra el mensaje de error y se termina la ejecucion
@@ -21,8 +23,6 @@ int main() {
     }
 
     const char delimitador[] = ";";
-
-
     while(fgets(buffer, BUFFER_SIZE, ficheroPreguntas)) {
 
         id = strtok(buffer, delimitador);
@@ -34,34 +34,21 @@ int main() {
         op4 = strtok(NULL, delimitador);
         opCorrec = strtok(NULL, delimitador);
 
-        printf("\nid: %s"
+        /*printf("\nid: %s"
                "\ncateg: %s"
                "\nPregunta: %s"
                "\nopcion1: %s"
                "\nopcion2: %s"
                "\nopcion3: %s"
                "\nopcion4: %s"
-               "\nopcionCorrec: %s", id, categ, preg, op1, op2, op3, op4, opCorrec);
+               "\nopcionCorrec: %s", id, categ, preg, op1, op2, op3, op4, opCorrec);*/
 
+        // Todos los valores de la linea, se insertan en una variable de tipo tItemL
         lineaDePregunta = parametrosAtItemL(id, categ, preg, op1, op2, op3, op4, opCorrec);
-        createEmptyList(&listaPreguntas);
-        insertItem(lineaDePregunta, &listaPreguntas);
+        insertItem(lineaDePregunta, &listaPreguntas); // Se inserta la variable tItemL en la lista de pregunas ordenada
 
     }
-    printf("\nid: %d"
-           "\ncateg: %c"
-           "\nPregunta: %s"
-           "\nopcion1: %s"
-           "\nopcion2: %s"
-           "\nopcion3: %s"
-           "\nopcion4: %s"
-           "\nopcionCorrec: %s", listaPreguntas->data.identificador,
-           listaPreguntas->data.categoria, listaPreguntas->data.pregunta,
-           listaPreguntas->data.opcionA, listaPreguntas->data.opcionB, listaPreguntas->data.opcionC,
-           listaPreguntas->data.opcionD, listaPreguntas->data.opcionCorrecta);
-
-
-
+    imprimirLista(listaPreguntas); // Imprime la lista para ver todos sus elementos
 
     return 0;
 }

@@ -4,7 +4,7 @@
 4;a;Quien pinto el cuadro llamado ''La Gioconda'';Hipatia de Alejandria;Picasso;Leonardo Da Vinci;El Greco;opcionC
 5;a;Quien pinto el cuador llamado ''Guernica'';Picasso;Miguel Angel;Goya;Cravaggio;opcionA
 6;d;Que pais gano el primer mundial de futbol de 1930?;Uruguay;Argentina;Brasil;Francia;opcionA
-7;Ocio;Como se llama la primera pelicula de Marvel;El increible Hulk;Capitan America;Thor;Iron Man;opcionD
+7;o;Como se llama la primera pelicula de Marvel;El increible Hulk;Capitan America;Thor;Iron Man;opcionD
 8;h;Cual fue el primer pais en aprobar el sufragio femenino?;Francia;Nueva Zelanda;Uruguay;Reino Unido;opcionB
 9;h;Que carabela no regreso del primer viaje de Colon a las Indias?;La Pinta;La Niña;La Santa Maria;Regresaron las tres;opcionC
 10;g;Cual es el rio mas caudaluso del mundo?;El Nilo;El Congo;El Orinoco;El Amazonas;opcionD
@@ -19,8 +19,8 @@
 19;c;Que elemento quimica esta en todas las moleculas organicas?;El silicio;El carbono;El oxigeno;El nitrogeno;opcionB
 20;c;Cual es el elemento mas abundante de la tierra?;El hidrogeno;El carbono;El oxigeno;El silicio;opcionA
 21;c;Aproximadamente, cuantos años tiene la tierra?;4500 millones de años;7000 millones de años;1000 millones de años;60 millones de años;opcionA
-22;Ocio;Cual fue la primera pelicula de Disney?;Toy Story;Blancanieves;La Cenicienta;La Sirenita;opcionB
-23;Ocio;Que banda de musica publico el album ''Master of Puppets''?;The Offspring;The Kinks;AC/DC;Metallica;opcionD
+22;o;Cual fue la primera pelicula de Disney?;Toy Story;Blancanieves;La Cenicienta;La Sirenita;opcionB
+23;o;Que banda de musica publico el album ''Master of Puppets''?;The Offspring;The Kinks;AC/DC;Metallica;opcionD
 24;d;Que corredor es conocido por ganar el Maraton de 1960 corriendola descalzo?;Usain Bolt;Eliud Kipchoge;Jan Zelezny;Abebe Bikila;opcionD
 25;d;Cuantos jugadores hay en un equipo de voleibol?;Tres;Seis;Nueve;Doce;opcionB
 26;d;Cual de estos colores NO pertenece a los anillos olimpicos?;El verde;El rojo; El narnaja;El amarillo;opcionC
@@ -32,5 +32,5 @@
 32;c;Cual era el nombre real del denominado ''Principe de las matematicas'';Pitagoras;Tales;Gauss;Euler;opcionC
 33;c;En la Tierra, cual es la acelaracion de la gravedad?;5 m/s^2;18 kg/m^2;9.8 m/s^2;10 kg/m^2;opcionC
 34;g;Como se llama el rio mas largo de Galicia?;El Sil;El Anllons;El Eume;El Miño;opcionD
-35;h;Que hecho historico marcael fin de la Edad Antigua y el inicio de la Edad Media?;El descubrimiento de America;La caida del imperio romano;El inicio de la escritura;El inicio de las matematicas;opcionB
+35;h;Que hecho historico marca el fin de la Edad Antigua y el inicio de la Edad Media?;El descubrimiento de America;La caida del imperio romano;El inicio de la escritura;El inicio de las matematicas;opcionB
 36;c;Como se llama la raza de perro mas grande del mundo?;Gran Danes;Schnauzer Gigante;Dalmata;Terranova;opcionA

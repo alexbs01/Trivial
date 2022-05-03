@@ -31,7 +31,7 @@ typedef struct pregunta {
 
 } tItemL;
 
-typedef struct tNode* tPosL;
+typedef struct tNode *tPosL;
 
 struct tNode {
     tItemL data;
@@ -47,5 +47,6 @@ bool createNode(tPosL *p);
 tItemL parametrosAtItemL(const char *id,const  char *categ, const char *preg,const  char *op1, const char *op2, const char *op3, const char *op4, const char *opCorrecta);
 tPosL findPosition(tList L, tItemL d);
 bool insertItem(tItemL d, tList *L);
+void imprimirLista(tList L);
 
 #endif //TRIVIAL_LISTAPREGUNTAS_H
