@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "listaPreguntas.h"
+#include "pilaDePreguntas.h"
 
 #define BUFFER_SIZE 1024
 
@@ -9,9 +10,12 @@ int main() {
     char nombreFicheroPreguntas[] = "preguntas.csv";
     char buffer[BUFFER_SIZE]; // En esta la variable se almacenará la linea del csv antes de que se divida en diferentes variables
     char *id, *categ, *preg, *op1, *op2, *op3, *op4, *opCorrec;
+    int numeroDePreguntas = 0;
 
     tList listaPreguntas;
     tItemL lineaDePregunta;
+
+    tStack pilaPreguntas;
 
     createEmptyList(&listaPreguntas); // Se crea una lista vacia para las preguntas
 
@@ -48,8 +52,11 @@ int main() {
         lineaDePregunta = parametrosAtItemL(id, categ, preg, op1, op2, op3, op4, opCorrec);
         insertItem(lineaDePregunta, &listaPreguntas); // Se inserta la variable tItemL en la lista de pregunas ordenada
 
+        numeroDePreguntas++;
     }
-    imprimirLista(listaPreguntas); // Imprime la lista para ver todos sus elementos
-
+    //imprimirLista(listaPreguntas); // Imprime la lista para ver todos sus elementos
+    mostrarElementoAleatorio(numeroDePreguntas+1, listaPreguntas);
+    
+    system("pause");
     return 0;
 }

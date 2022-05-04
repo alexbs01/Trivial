@@ -13,7 +13,7 @@ bool isEmptyList(tList L) {
 }
 
 bool createNode(tPosL *p) {
-    *p = malloc(sizeof(struct tNode));
+    *p = malloc(sizeof(struct tNodeL));
     return *p != NULL;
 }
 
@@ -100,5 +100,29 @@ void imprimirLista(tList L) {
                    posicion->data.opcionD, posicion->data.opcionCorrecta);
         }
     }
+}
 
+void mostrarElementoAleatorio(int numeroMaximo, tList L) {
+    tPosL posicion;
+    srand(time(NULL));
+    int numeroAleatorio = rand() % numeroMaximo+1;
+    int posicionNumerica;
+
+    if(isEmptyList(L)) {
+        printf("Esta lista está vacia\n");
+    } else {
+        for (posicion = L; posicion != LNULL && posicion->data.identificador != numeroAleatorio; posicion = posicion->next);
+        printf("\nid: %d"
+               "\ncateg: %c"
+               "\nPregunta: %s"
+               "\nopcion1: %s"
+               "\nopcion2: %s"
+               "\nopcion3: %s"
+               "\nopcion4: %s"
+               "\nopcionCorrec: %s\n", posicion->data.identificador,
+               posicion->data.categoria, posicion->data.pregunta,
+               posicion->data.opcionA, posicion->data.opcionB, posicion->data.opcionC,
+               posicion->data.opcionD, posicion->data.opcionCorrecta);
+
+    }
 }

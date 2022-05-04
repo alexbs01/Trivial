@@ -6,4 +6,9 @@ CMakeFiles/Trivial.dir/listaPreguntas.c.obj: \
  ../listaPreguntas.h
 CMakeFiles/Trivial.dir/main.c.obj: \
  ../listaPreguntas.h \
- ../main.c
+ ../main.c \
+ ../pilaDePreguntas.h
+CMakeFiles/Trivial.dir/pilaDePreguntas.c.obj: \
+ ../listaPreguntas.h \
+ ../pilaDePreguntas.c \
+ ../pilaDePreguntas.h

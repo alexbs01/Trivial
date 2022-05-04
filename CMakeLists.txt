@@ -3,4 +3,4 @@ project(Trivial C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Trivial main.c listaPreguntas.c listaPreguntas.h)
+add_executable(Trivial main.c listaPreguntas.c listaPreguntas.h pilaDePreguntas.c pilaDePreguntas.h)

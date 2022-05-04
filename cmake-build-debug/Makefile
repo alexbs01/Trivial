@@ -176,6 +176,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trivial.dir\build.make CMakeFiles/Trivial.dir/main.c.s
 .PHONY : main.c.s
 
+pilaDePreguntas.obj: pilaDePreguntas.c.obj
+.PHONY : pilaDePreguntas.obj
+
+# target to build an object file
+pilaDePreguntas.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trivial.dir\build.make CMakeFiles/Trivial.dir/pilaDePreguntas.c.obj
+.PHONY : pilaDePreguntas.c.obj
+
+pilaDePreguntas.i: pilaDePreguntas.c.i
+.PHONY : pilaDePreguntas.i
+
+# target to preprocess a source file
+pilaDePreguntas.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trivial.dir\build.make CMakeFiles/Trivial.dir/pilaDePreguntas.c.i
+.PHONY : pilaDePreguntas.c.i
+
+pilaDePreguntas.s: pilaDePreguntas.c.s
+.PHONY : pilaDePreguntas.s
+
+# target to generate assembly for a file
+pilaDePreguntas.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trivial.dir\build.make CMakeFiles/Trivial.dir/pilaDePreguntas.c.s
+.PHONY : pilaDePreguntas.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... pilaDePreguntas.obj
+	@echo ... pilaDePreguntas.i
+	@echo ... pilaDePreguntas.s
 .PHONY : help
 
 

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/listaPreguntas.c" "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/cmake-build-debug/CMakeFiles/Trivial.dir/listaPreguntas.c.obj"
   "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/main.c" "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/cmake-build-debug/CMakeFiles/Trivial.dir/main.c.obj"
+  "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/pilaDePreguntas.c" "C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/cmake-build-debug/CMakeFiles/Trivial.dir/pilaDePreguntas.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

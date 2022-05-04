@@ -83,6 +83,12 @@
 		<Unit filename="C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/main.c">
 			<Option target="Trivial"/>
 		</Unit>
+		<Unit filename="C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/pilaDePreguntas.c">
+			<Option target="Trivial"/>
+		</Unit>
+		<Unit filename="C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/pilaDePreguntas.h">
+			<Option target="Trivial"/>
+		</Unit>
 		<Unit filename="C:/Users/alexb/Desktop/Cosas/proyectosGit/Trivial/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

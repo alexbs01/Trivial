@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Trivial.dir/listaPreguntas.c.obj"
   "CMakeFiles/Trivial.dir/main.c.obj"
+  "CMakeFiles/Trivial.dir/pilaDePreguntas.c.obj"
   "Trivial.exe"
   "Trivial.exe.manifest"
   "Trivial.pdb"
